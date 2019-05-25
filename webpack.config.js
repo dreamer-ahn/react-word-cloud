@@ -10,11 +10,13 @@ module.exports = {
         path: path.resolve(__dirname, './build'),
         filename: '[name].js'
     },
-    module: {
-        rules: [{
-            test: /\.js$/,
+    module: {rules: [{
+        test: /\.js$/,
             include: path.resolve(__dirname, './src'),
             loaders: 'babel-loader'
+        }, {
+            test: /\.css$/,
+            loader: "style-loader!css-loader"
         }]
     },
     plugins: [

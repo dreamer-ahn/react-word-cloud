@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add firebase-tool
+  /usr/local/bin/node /usr/local/bin/yarn add style-loader
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ahnteam/anaconda3/bin
@@ -14,17 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/firebase-tool: Not found
-      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66058:18)
-      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:129541:22)
-      at Request.emit (events.js:189:13)
-      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:130513:10)
-      at Request.emit (events.js:189:13)
-      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:130435:12)
-      at Object.onceWrapper (events.js:277:13)
-      at IncomingMessage.emit (events.js:194:15)
-      at endReadableNT (_stream_readable.js:1103:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  Error: EACCES: permission denied, mkdir '/Users/ahnteam/react-word-cloud/node_modules/@babel/preset-env/node_modules/@babel'
 
 npm manifest: 
   {
@@ -38,7 +28,8 @@ npm manifest:
       "firebase-tools": "^6.10.0",
       "react": "^16.8.6",
       "react-dom": "^16.8.6",
-      "react-router-dom": "^5.0.0"
+      "react-router-dom": "^5.0.0",
+      "react-text-truncate": "^0.14.1"
     },
     "scripts": {
       "start": "NODE_ENV=development webpack-dev-server",
